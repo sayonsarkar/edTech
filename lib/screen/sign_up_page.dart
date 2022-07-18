@@ -1,15 +1,12 @@
 import 'package:edtech/gen/assets.gen.dart';
-import 'package:edtech/screen/sign_up_page.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/utilities/text_style.dart';
-import 'package:edtech/widget/components/bottom_bar.dart';
 import 'package:edtech/widget/login/input_text_field.dart';
 import 'package:edtech/widget/login/login_button.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class SignUpPage extends StatelessWidget {
+  const SignUpPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,37 +20,21 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  const $AssetsImagesGen().loginImage.image(scale: 2),
+                  const $AssetsImagesGen().signUpImage.image(scale: 2),
                   const Text(
-                    KString.logIn,
+                    KString.signUp,
                     style: TextStyles.loginHeaderText,
                   ),
                   const Text(KString.socialLoginText),
-                  SizedBox(
-                    width: MediaQuery.of(context).size.width * 0.5,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        const $AssetsImagesGen().facebook.image(scale: 2),
-                        const $AssetsImagesGen().instagram.image(scale: 2),
-                        const $AssetsImagesGen().google.image(scale: 2),
-                      ],
-                    ),
-                  ),
+                  inputTextField(hintText: KString.name),
                   inputTextField(hintText: KString.email),
                   inputTextField(
                       hintText: KString.password,
                       suffixIcon: const Icon(Icons.remove_red_eye_outlined)),
-                  const Text(KString.forgotPassword),
-                  loginButton(
-                      context: context,
-                      text: KString.logIn,
-                      onTap: () => Get.to(() => const BottomBar())),
+                  loginButton(context: context, text: KString.signUp),
                   GestureDetector(
-                    onTap: () {
-                      Get.to(() => const SignUpPage());
-                    },
-                    child: const Text(KString.signUp),
+                    onTap: () {},
+                    child: const Text(KString.logIn),
                   )
                 ],
               ),

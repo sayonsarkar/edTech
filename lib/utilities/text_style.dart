@@ -14,4 +14,11 @@ class TextStyles {
       TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 23);
 
   static const TextStyle introDesc = TextStyle(color: Colors.black);
+
+  static const TextStyle loginHeaderText =
+      TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20);
+  static const TextStyle appHeader =
+      TextStyle(color: Colors.black, fontWeight: FontWeight.bold);
+  static const TextStyle profileContainersText =
+      TextStyle(fontWeight: FontWeight.bold, fontSize: 20);
 }
