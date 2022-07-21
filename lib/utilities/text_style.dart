@@ -1,3 +1,4 @@
+import 'package:edtech/utilities/colors.dart';
 import 'package:flutter/material.dart';
 
 class TextStyles {
@@ -21,4 +22,10 @@ class TextStyles {
       TextStyle(color: Colors.black, fontWeight: FontWeight.bold);
   static const TextStyle profileContainersText =
       TextStyle(fontWeight: FontWeight.bold, fontSize: 20);
+  static const TextStyle courseContainerSubHeader =
+      TextStyle(color: KColor.courseTextColor, fontSize: 12);
+  static const TextStyle courseContainerHeader =
+      TextStyle(fontSize: 24, fontWeight: FontWeight.bold);
+  static const TextStyle progressheader =
+      TextStyle(fontSize: 18, fontWeight: FontWeight.bold);
 }

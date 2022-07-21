@@ -1,6 +1,9 @@
+import 'package:edtech/gen/assets.gen.dart';
+import 'package:edtech/screen/courses_screen.dart';
 import 'package:edtech/screen/profile_page.dart';
 import 'package:edtech/screen/settings_page.dart';
 import 'package:edtech/utilities/colors.dart';
+import 'package:edtech/utilities/strings.dart';
 import 'package:flutter/material.dart';
 
 class BottomBar extends StatefulWidget {
@@ -13,8 +16,7 @@ class BottomBar extends StatefulWidget {
 class _BottomBarState extends State<BottomBar> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
-    Text('Home Page',
-        style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold)),
+    CoursesScreen(),
     ProfilePage(),
     SettingsPage(),
   ];
@@ -36,18 +38,24 @@ class _BottomBarState extends State<BottomBar> {
           borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(10), topRight: Radius.circular(20)),
           child: BottomNavigationBar(
-            items: const [
-              BottomNavigationBarItem(
+            items: [
+              const BottomNavigationBarItem(
                 icon: Icon(Icons.book_rounded),
-                label: 'Courses',
+                label: KString.courses,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.book_rounded),
-                label: 'Profile',
+                icon: Assets.images.profileIcon.image(
+                    scale: 2,
+                    color:
+                        _selectedIndex == 1 ? KColor.appOrange : Colors.grey),
+                label: KString.profile,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.book_rounded),
-                label: 'Settings',
+                icon: Assets.images.settingsIcon.image(
+                    scale: 2,
+                    color:
+                        _selectedIndex == 2 ? KColor.appOrange : Colors.grey),
+                label: KString.settings,
               ),
             ],
             currentIndex: _selectedIndex,

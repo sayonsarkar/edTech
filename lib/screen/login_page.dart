@@ -34,7 +34,7 @@ class LoginPage extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        const $AssetsImagesGen().facebook.image(scale: 2),
+                        Assets.images.facebook.image(scale: 2),
                         const $AssetsImagesGen().instagram.image(scale: 2),
                         const $AssetsImagesGen().google.image(scale: 2),
                       ],

@@ -12,6 +12,25 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  /// File path: assets/images/Price.png
+  AssetGenImage get price => const AssetGenImage('assets/images/Price.png');
+
+  /// File path: assets/images/congratulations_image.png
+  AssetGenImage get congratulationsImage =>
+      const AssetGenImage('assets/images/congratulations_image.png');
+
+  /// File path: assets/images/course_detail_image.png
+  AssetGenImage get courseDetailImage =>
+      const AssetGenImage('assets/images/course_detail_image.png');
+
+  /// File path: assets/images/course_image.png
+  AssetGenImage get courseImage =>
+      const AssetGenImage('assets/images/course_image.png');
+
+  /// File path: assets/images/course_progress.png
+  AssetGenImage get courseProgress =>
+      const AssetGenImage('assets/images/course_progress.png');
+
   /// File path: assets/images/email.png
   AssetGenImage get email => const AssetGenImage('assets/images/email.png');
 
@@ -50,9 +69,25 @@ class $AssetsImagesGen {
   AssetGenImage get password =>
       const AssetGenImage('assets/images/password.png');
 
+  /// File path: assets/images/profile_icon.png
+  AssetGenImage get profileIcon =>
+      const AssetGenImage('assets/images/profile_icon.png');
+
   /// File path: assets/images/profile_image.png
   AssetGenImage get profileImage =>
       const AssetGenImage('assets/images/profile_image.png');
+
+  /// File path: assets/images/progress_1.png
+  AssetGenImage get progress1 =>
+      const AssetGenImage('assets/images/progress_1.png');
+
+  /// File path: assets/images/progress_2.png
+  AssetGenImage get progress2 =>
+      const AssetGenImage('assets/images/progress_2.png');
+
+  /// File path: assets/images/settings_icon.png
+  AssetGenImage get settingsIcon =>
+      const AssetGenImage('assets/images/settings_icon.png');
 
   /// File path: assets/images/settings_image.png
   AssetGenImage get settingsImage =>
