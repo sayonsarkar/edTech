@@ -3,7 +3,7 @@ import 'package:edtech/screen/lesson_screen/test_screen.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/utilities/text_style.dart';
 import 'package:edtech/widget/components/app_bar.dart';
-import 'package:edtech/widget/course/course_tab_bar.dart';
+import 'package:edtech/widget/lesson_screen_widgets/course_tab_bar.dart';
 import 'package:flutter/material.dart';
 
 class CourseLesson extends StatefulWidget {

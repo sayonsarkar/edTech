@@ -3,7 +3,7 @@ import 'package:edtech/screen/utility_screens/congratulation_screen.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/utilities/text_style.dart';
 import 'package:edtech/widget/components/app_bar.dart';
-import 'package:edtech/widget/course/option_container.dart';
+import 'package:edtech/widget/lesson_screen_widgets/option_container.dart';
 import 'package:edtech/widget/onboarding/onboarding_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

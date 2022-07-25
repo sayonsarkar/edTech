@@ -1,7 +1,7 @@
 import 'package:edtech/gen/assets.gen.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/utilities/text_style.dart';
-import 'package:edtech/widget/course/progress_column.dart';
+import 'package:edtech/widget/lesson_screen_widgets/progress_column.dart';
 import 'package:flutter/material.dart';
 
 Widget progressContainer(int index, BuildContext context) {

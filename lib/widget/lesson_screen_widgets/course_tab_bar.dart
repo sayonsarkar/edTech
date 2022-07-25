@@ -1,5 +1,5 @@
 import 'package:edtech/utilities/strings.dart';
-import 'package:edtech/widget/course/course_custom_tab.dart';
+import 'package:edtech/widget/lesson_screen_widgets/course_custom_tab.dart';
 import 'package:flutter/material.dart';
 
 tabBar(BuildContext context, TabController? tabController, int? activeTabIndex,
