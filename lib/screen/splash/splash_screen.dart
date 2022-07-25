@@ -28,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const $AssetsImagesGen().splashScreenImage.image(),
+          Assets.images.splashScreenImage.image(),
           const SizedBox(
             height: 50,
           ),

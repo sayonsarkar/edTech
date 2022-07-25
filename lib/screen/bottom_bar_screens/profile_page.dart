@@ -22,7 +22,7 @@ class ProfilePage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const $AssetsImagesGen().profileImage.image(scale: 2),
+              Assets.images.profileImage.image(scale: 2),
               profileContainers(context,
                   text: KString.yourCourses,
                   onTap: () => Get.to(() => const YourCoursesScreen())),

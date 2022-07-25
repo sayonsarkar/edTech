@@ -17,7 +17,7 @@ class CongratulationScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Spacer(),
-            const $AssetsImagesGen().congratulationsImage.image(),
+            Assets.images.congratulationsImage.image(),
             const SizedBox(height: 20),
             const Text(
               KString.congratulations,
@@ -34,9 +34,9 @@ class CongratulationScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  const $AssetsImagesGen().facebook.image(scale: 2),
-                  const $AssetsImagesGen().instagram.image(scale: 2),
-                  const $AssetsImagesGen().google.image(scale: 2),
+                  Assets.images.facebook.image(scale: 2),
+                  Assets.images.instagram.image(scale: 2),
+                  Assets.images.google.image(scale: 2),
                 ],
               ),
             )

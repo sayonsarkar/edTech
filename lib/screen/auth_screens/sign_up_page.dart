@@ -20,7 +20,7 @@ class SignUpPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  const $AssetsImagesGen().signUpImage.image(scale: 2),
+                  Assets.images.signUpImage.image(scale: 2),
                   const Text(
                     KString.signUp,
                     style: TextStyles.loginHeaderText,

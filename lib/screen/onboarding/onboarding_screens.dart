@@ -44,7 +44,7 @@ class _OnboardingScreensState extends State<OnboardingScreens> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const $AssetsImagesGen().intro1.image(),
+                      Assets.images.intro1.image(),
                       const Text(
                         KString.intro1,
                         textAlign: TextAlign.center,
@@ -59,7 +59,7 @@ class _OnboardingScreensState extends State<OnboardingScreens> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const $AssetsImagesGen().intro2.image(),
+                      Assets.images.intro2.image(),
                       const Text(
                         KString.intro2,
                         textAlign: TextAlign.center,
@@ -74,7 +74,7 @@ class _OnboardingScreensState extends State<OnboardingScreens> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const $AssetsImagesGen().intro3.image(),
+                      Assets.images.intro3.image(),
                       const Text(
                         KString.intro3,
                         style: TextStyles.introHeader,

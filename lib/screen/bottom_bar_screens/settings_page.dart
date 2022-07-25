@@ -28,11 +28,9 @@ class _SettingsPageState extends State<SettingsPage> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Center(
-                    child:
-                        const $AssetsImagesGen().settingsImage.image(scale: 2)),
+                Center(child: Assets.images.settingsImage.image(scale: 2)),
                 settingsContainer(
-                    const $AssetsImagesGen().notification.image(scale: 2),
+                    Assets.images.notification.image(scale: 2),
                     context,
                     Switch(
                         value: setSwitch,
@@ -46,21 +44,15 @@ class _SettingsPageState extends State<SettingsPage> {
                   KString.accountInfo,
                   style: TextStyles.profileContainersText,
                 ),
-                settingsContainer(const $AssetsImagesGen().name.image(scale: 2),
-                    context, const Icon(Icons.arrow_forward_ios),
+                settingsContainer(Assets.images.name.image(scale: 2), context,
+                    const Icon(Icons.arrow_forward_ios),
                     text: KString.name, subText: KString.userName),
-                settingsContainer(
-                    const $AssetsImagesGen().email.image(scale: 2),
-                    context,
+                settingsContainer(Assets.images.email.image(scale: 2), context,
                     const Icon(Icons.arrow_forward_ios),
-                    text: KString.email,
-                    subText: KString.userEmail),
-                settingsContainer(
-                    const $AssetsImagesGen().password.image(scale: 2),
-                    context,
-                    const Icon(Icons.arrow_forward_ios),
-                    text: KString.password,
-                    subText: KString.lastChanged),
+                    text: KString.email, subText: KString.userEmail),
+                settingsContainer(Assets.images.password.image(scale: 2),
+                    context, const Icon(Icons.arrow_forward_ios),
+                    text: KString.password, subText: KString.lastChanged),
               ],
             ),
           ),

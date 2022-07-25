@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  const $AssetsImagesGen().loginImage.image(scale: 2),
+                  Assets.images.loginImage.image(scale: 2),
                   const Text(
                     KString.logIn,
                     style: TextStyles.loginHeaderText,
@@ -35,8 +35,8 @@ class LoginPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Assets.images.facebook.image(scale: 2),
-                        const $AssetsImagesGen().instagram.image(scale: 2),
-                        const $AssetsImagesGen().google.image(scale: 2),
+                        Assets.images.instagram.image(scale: 2),
+                        Assets.images.google.image(scale: 2),
                       ],
                     ),
                   ),
