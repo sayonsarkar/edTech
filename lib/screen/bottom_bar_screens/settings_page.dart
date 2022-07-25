@@ -18,7 +18,7 @@ class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBarWithLeadingIcon(text: 'Settings'),
+      appBar: appBarWithLeadingIcon(text: KString.settings),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -41,26 +41,26 @@ class _SettingsPageState extends State<SettingsPage> {
                             setSwitch = val;
                           });
                         }),
-                    text: 'Notifications'),
+                    text: KString.notifications),
                 const Text(
-                  'Account information',
+                  KString.accountInfo,
                   style: TextStyles.profileContainersText,
                 ),
                 settingsContainer(const $AssetsImagesGen().name.image(scale: 2),
                     context, const Icon(Icons.arrow_forward_ios),
-                    text: KString.name, subText: 'Juana Antonieta'),
+                    text: KString.name, subText: KString.userName),
                 settingsContainer(
                     const $AssetsImagesGen().email.image(scale: 2),
                     context,
                     const Icon(Icons.arrow_forward_ios),
                     text: KString.email,
-                    subText: 'juanita123@gmail.com'),
+                    subText: KString.userEmail),
                 settingsContainer(
                     const $AssetsImagesGen().password.image(scale: 2),
                     context,
                     const Icon(Icons.arrow_forward_ios),
                     text: KString.password,
-                    subText: 'changed 2 weeks ago'),
+                    subText: KString.lastChanged),
               ],
             ),
           ),

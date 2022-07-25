@@ -54,12 +54,20 @@ class $AssetsImagesGen {
   /// File path: assets/images/intro_3.png
   AssetGenImage get intro3 => const AssetGenImage('assets/images/intro_3.png');
 
+  /// File path: assets/images/lesson_video.png
+  AssetGenImage get lessonVideo =>
+      const AssetGenImage('assets/images/lesson_video.png');
+
   /// File path: assets/images/login_image.png
   AssetGenImage get loginImage =>
       const AssetGenImage('assets/images/login_image.png');
 
   /// File path: assets/images/name.png
   AssetGenImage get name => const AssetGenImage('assets/images/name.png');
+
+  /// File path: assets/images/not_saved_image.png
+  AssetGenImage get notSavedImage =>
+      const AssetGenImage('assets/images/not_saved_image.png');
 
   /// File path: assets/images/notification.png
   AssetGenImage get notification =>
@@ -85,6 +93,10 @@ class $AssetsImagesGen {
   AssetGenImage get progress2 =>
       const AssetGenImage('assets/images/progress_2.png');
 
+  /// File path: assets/images/question_image.png
+  AssetGenImage get questionImage =>
+      const AssetGenImage('assets/images/question_image.png');
+
   /// File path: assets/images/settings_icon.png
   AssetGenImage get settingsIcon =>
       const AssetGenImage('assets/images/settings_icon.png');
@@ -100,6 +112,10 @@ class $AssetsImagesGen {
   /// File path: assets/images/splash_screen_image.png
   AssetGenImage get splashScreenImage =>
       const AssetGenImage('assets/images/splash_screen_image.png');
+
+  /// File path: assets/images/test_card_image.png
+  AssetGenImage get testCardImage =>
+      const AssetGenImage('assets/images/test_card_image.png');
 }
 
 class Assets {

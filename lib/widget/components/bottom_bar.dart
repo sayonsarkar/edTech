@@ -1,7 +1,7 @@
 import 'package:edtech/gen/assets.gen.dart';
-import 'package:edtech/screen/courses_screen.dart';
-import 'package:edtech/screen/profile_page.dart';
-import 'package:edtech/screen/settings_page.dart';
+import 'package:edtech/screen/bottom_bar_screens/courses_screen.dart';
+import 'package:edtech/screen/bottom_bar_screens/profile_page.dart';
+import 'package:edtech/screen/bottom_bar_screens/settings_page.dart';
 import 'package:edtech/utilities/colors.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:flutter/material.dart';

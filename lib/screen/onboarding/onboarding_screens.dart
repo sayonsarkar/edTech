@@ -1,5 +1,5 @@
 import 'package:edtech/gen/assets.gen.dart';
-import 'package:edtech/screen/login_page.dart';
+import 'package:edtech/screen/auth_screens/login_page.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/utilities/text_style.dart';
 import 'package:edtech/widget/onboarding/onboarding_button.dart';

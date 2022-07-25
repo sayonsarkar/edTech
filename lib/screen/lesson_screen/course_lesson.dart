@@ -1,0 +1,62 @@
+import 'package:edtech/screen/lesson_screen/lesson_screen.dart';
+import 'package:edtech/screen/lesson_screen/test_screen.dart';
+import 'package:edtech/utilities/strings.dart';
+import 'package:edtech/utilities/text_style.dart';
+import 'package:edtech/widget/components/app_bar.dart';
+import 'package:edtech/widget/course/course_tab_bar.dart';
+import 'package:flutter/material.dart';
+
+class CourseLesson extends StatefulWidget {
+  const CourseLesson({Key? key}) : super(key: key);
+
+  @override
+  State<CourseLesson> createState() => _CourseLessonState();
+}
+
+class _CourseLessonState extends State<CourseLesson>
+    with SingleTickerProviderStateMixin {
+  TabController? tabController;
+  int activeTabIndex = 0;
+
+  @override
+  void initState() {
+    tabController = TabController(length: 3, vsync: this, initialIndex: 0);
+
+    tabController?.addListener(() {
+      setState(() {
+        activeTabIndex = tabController?.index ?? 0;
+      });
+    });
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: appBarWithLeadingIcon(text: KString.courseHeaderText),
+      body: Column(
+        children: [
+          const Text(
+            KString.tagsForHeader,
+            style: TextStyles.courseContainerHeader,
+          ),
+          tabBar(context, tabController, activeTabIndex, onTap: (index) {
+            setState(() {
+              activeTabIndex = index;
+            });
+          }),
+          Expanded(
+            child: TabBarView(
+              controller: tabController,
+              children: const [
+                LessonScreen(),
+                TestScreen(),
+                Tab(icon: Icon(Icons.directions_transit)),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}

@@ -1,9 +1,11 @@
 import 'package:edtech/gen/assets.gen.dart';
+import 'package:edtech/screen/utility_screens/no_payment_screen.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/utilities/text_style.dart';
 import 'package:edtech/widget/components/app_bar.dart';
 import 'package:edtech/widget/login/login_button.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class CourseDetailScreen extends StatelessWidget {
   const CourseDetailScreen({Key? key}) : super(key: key);
@@ -37,7 +39,10 @@ class CourseDetailScreen extends StatelessWidget {
             const Text(KString.duration),
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: loginButton(context: context, text: 'Add to cart'))
+                child: loginButton(
+                    context: context,
+                    text: KString.addToCart,
+                    onTap: () => Get.to(() => const NoPaymentScreen())))
           ],
         ),
       ),

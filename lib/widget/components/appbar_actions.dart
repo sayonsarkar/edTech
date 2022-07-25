@@ -1,3 +1,4 @@
+import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/utilities/text_style.dart';
 import 'package:flutter/material.dart';
 
@@ -10,11 +11,11 @@ PreferredSizeWidget appBarWithActions() {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
         Text(
-          'Hello,',
+          KString.hello,
           style: TextStyle(
               color: Colors.black, fontWeight: FontWeight.w300, fontSize: 14),
         ),
-        Text('Juana Antonieta', style: TextStyles.appHeader),
+        Text(KString.userName, style: TextStyles.appHeader),
       ],
     ),
     actions: [

@@ -1,5 +1,7 @@
 import 'package:edtech/gen/assets.gen.dart';
-import 'package:edtech/screen/your_courses_screen.dart';
+import 'package:edtech/screen/utility_screens/not_saved_screen.dart';
+import 'package:edtech/screen/utility_screens/payment_screen.dart';
+import 'package:edtech/screen/lesson_screen/your_courses_screen.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/widget/components/app_bar.dart';
 import 'package:edtech/widget/profile/profile_container.dart';
@@ -12,7 +14,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appBarWithLeadingIcon(text: 'Profile'),
+      appBar: appBarWithLeadingIcon(text: KString.profile),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SizedBox(
@@ -24,8 +26,12 @@ class ProfilePage extends StatelessWidget {
               profileContainers(context,
                   text: KString.yourCourses,
                   onTap: () => Get.to(() => const YourCoursesScreen())),
-              profileContainers(context, text: KString.saved),
-              profileContainers(context, text: KString.payment),
+              profileContainers(context,
+                  text: KString.saved,
+                  onTap: () => Get.to(() => const NotSaved())),
+              profileContainers(context,
+                  text: KString.payment,
+                  onTap: () => Get.to(() => const PaymentScreen())),
               const Text(KString.logOut)
             ],
           ),

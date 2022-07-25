@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:edtech/gen/assets.gen.dart';
-import 'package:edtech/screen/onboarding_screens.dart';
+import 'package:edtech/screen/onboarding/onboarding_screens.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/utilities/text_style.dart';
 import 'package:flutter/material.dart';

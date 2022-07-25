@@ -1,4 +1,4 @@
-import 'package:edtech/screen/course_progress_screen.dart';
+import 'package:edtech/screen/lesson_screen/course_progress_screen.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/widget/components/app_bar.dart';
 import 'package:edtech/widget/course/course_container.dart';
@@ -13,12 +13,17 @@ class YourCoursesScreen extends StatelessWidget {
     return Scaffold(
       appBar: appBarWithLeadingIcon(text: KString.yourCourses),
       body: ListView.builder(
-          padding: const EdgeInsets.all(8),
-          itemCount: 3,
-          itemBuilder: (context, index) {
-            return courseContainer(context,
-                onTap: () => Get.to(() => const CourseProgressScreen()));
-          }),
+        padding: const EdgeInsets.all(8),
+        itemCount: 3,
+        itemBuilder: (context, index) {
+          return courseContainer(
+            context,
+            onTap: () => Get.to(
+              () => const CourseProgressScreen(),
+            ),
+          );
+        },
+      ),
     );
   }
 }
