@@ -86,4 +86,5 @@ class KString {
   static const String discuss = 'Discuss';
   static const String tests = 'Tests';
   static const String hello = 'Hello,';
+  static const String noDataFound = 'No Data Found';
 }

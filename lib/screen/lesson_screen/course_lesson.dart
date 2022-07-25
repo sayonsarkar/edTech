@@ -51,7 +51,11 @@ class _CourseLessonState extends State<CourseLesson>
               children: const [
                 LessonScreen(),
                 TestScreen(),
-                Tab(icon: Icon(Icons.directions_transit)),
+                Center(
+                    child: Text(
+                  KString.noDataFound,
+                  style: TextStyles.courseContainerHeader,
+                )),
               ],
             ),
           )
