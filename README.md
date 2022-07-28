@@ -1,16 +1,61 @@
 # edtech
 
-A new Flutter project.
+<img src="screenshots/app_screenshot.jpg"> 
 
-## Getting Started
+This is an online education application for both Android and IOS. This application helps users in upgrading their skills through video lessons. It also helps users in keeping track of their progress through quiz on each topic they have completed.
 
-This project is a starting point for a Flutter application.
+## Flutter & Dart Version
+-   Dart (2.17.5)
+-   Flutter (3.0.4)
 
-A few resources to get you started if this is your first Flutter project:
+## Packages we are using:
+-   smooth_page_indicator: [link](https://pub.dev/packages/smooth_page_indicator)
+-   get: [link](https://pub.dev/packages/get)
+-   flutter_gen: [link](https://pub.dev/packages/flutter_gen)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Screens it contains:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+=> Onboarding
+
+=> Login
+
+=> Sign Up
+
+=> Courses
+
+=> Profile
+
+=> Settings
+
+=> Course details
+
+=> Course lessons
+
+=> Course tests
+
+=> Result screen
+
+=> Payment Screen
+
+=> Bottom Navigation Bar
+
+## Folder Structure
+
+Let's take a deep dive to how the files and folders are arranged in the app.
+
+ ```                    
+|── edTech                       <------ Project
+│   ├── android                         <------ Android config                
+│   ├── ios                             <------ iOS config
+│   ├── lib
+│   │   └── assets                      <------ Assets used in the app
+|   |          └── images               <------ Images Used in the Applications
+│   │   └── screens                     <------ screens used in the App
+│   │   └── utility               
+│   │   └── widgets                     <------ Assets used in the app
+|   |          └── screen-sub-folders   <------ Contains widgets of the every screen used in the app       
+│   │   └── main.dart                   <------ Starting point of the app
+│   ├── pubspec.yaml                    <------ Contains dependencies used in the app
+│
+│   ├── .....
+```
