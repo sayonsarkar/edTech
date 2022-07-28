@@ -39,6 +39,10 @@ This is an online education application for both Android and IOS. This applicati
 
 => Bottom Navigation Bar
 
+## Screenshots
+<img src="screenshots/1.png" height="400" width="200"> 
+<img src="screenshots/2.png" height="400" width="200"> 
+
 ## Folder Structure
 
 Let's take a deep dive to how the files and folders are arranged in the app.
