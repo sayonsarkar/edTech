@@ -49,6 +49,7 @@ class _CoursesScreenState extends State<CoursesScreen> {
             Expanded(
               child: ListView.builder(
                 itemCount: 3,
+                physics: const BouncingScrollPhysics(),
                 itemBuilder: (context, index) {
                   return courseContainer(
                     context,

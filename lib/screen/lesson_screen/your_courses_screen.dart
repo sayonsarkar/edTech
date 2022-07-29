@@ -15,6 +15,7 @@ class YourCoursesScreen extends StatelessWidget {
       body: ListView.builder(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         itemCount: 3,
+        physics: const BouncingScrollPhysics(),
         itemBuilder: (context, index) {
           return courseContainer(
             context,

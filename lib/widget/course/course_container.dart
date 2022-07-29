@@ -17,15 +17,12 @@ Widget courseContainer(BuildContext context, int index, {Function()? onTap}) {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            width: MediaQuery.of(context).size.width,
-            child: index == 0
-                ? Assets.images.courseImage.image(scale: 2, fit: BoxFit.cover)
-                : index == 1
-                    ? Assets.images.courseAltImage
-                        .image(scale: 2, fit: BoxFit.cover)
-                    : Assets.images.altCourseImage
-                        .image(scale: 2, fit: BoxFit.cover),
-          ),
+              width: MediaQuery.of(context).size.width,
+              child: courseImage(index == 0
+                  ? Assets.images.courseImage.image(fit: BoxFit.cover)
+                  : index == 1
+                      ? Assets.images.altCourseImage.image(fit: BoxFit.cover)
+                      : Assets.images.courseAltImage.image(fit: BoxFit.cover))),
           Container(
             height: MediaQuery.of(context).size.height * 0.15,
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
@@ -51,5 +48,18 @@ Widget courseContainer(BuildContext context, int index, {Function()? onTap}) {
         ],
       ),
     ),
+  );
+}
+
+Widget courseImage(image) {
+  return Stack(
+    alignment: Alignment.bottomRight,
+    children: [
+      image,
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Assets.images.price.image(scale: 2),
+      )
+    ],
   );
 }

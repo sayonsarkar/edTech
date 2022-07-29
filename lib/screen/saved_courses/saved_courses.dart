@@ -31,6 +31,7 @@ class _SavedCoursesState extends State<SavedCourses> {
             ),
             Expanded(
               child: ListView.builder(
+                physics: const BouncingScrollPhysics(),
                 itemCount: 3,
                 itemBuilder: (context, index) {
                   return courseContainer(context, index,
