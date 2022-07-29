@@ -1,4 +1,5 @@
 import 'package:edtech/utilities/colors.dart';
+import 'package:edtech/utilities/text_style.dart';
 import 'package:flutter/material.dart';
 
 Tab customTab(
@@ -27,10 +28,7 @@ Tab customTab(
       child: Center(
         child: Text(
           title,
-          style: TextStyle(
-            color: activeTabIndex == index ? Colors.black : Colors.grey,
-            fontSize: 18,
-          ),
+          style: TextStyles.tabButtonText(activeTabIndex, index),
         ),
       ),
     ),

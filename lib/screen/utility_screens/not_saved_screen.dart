@@ -20,7 +20,7 @@ class NotSaved extends StatelessWidget {
             const Spacer(),
             Assets.images.notSavedImage.image(),
             const SizedBox(height: 20),
-            const Text(
+            Text(
               KString.notSavedText,
               style: TextStyles.courseContainerHeader,
             ),

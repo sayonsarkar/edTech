@@ -15,7 +15,7 @@ class CourseDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: appBarWithLeadingIcon(text: KString.courseHeaderText),
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.symmetric(horizontal: 12.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,15 +24,16 @@ class CourseDetailScreen extends StatelessWidget {
             Align(
                 alignment: Alignment.centerRight,
                 child: Assets.images.price.image(scale: 2)),
-            const Text(
+            Text(
               KString.courseHeader,
               style: TextStyles.courseContainerHeader,
             ),
-            const Text(
+            Text(
               KString.courseDetail,
               textAlign: TextAlign.justify,
+              style: TextStyles.appButtonColor,
             ),
-            const Text(
+            Text(
               KString.dutationHeader,
               style: TextStyles.courseContainerHeader,
             ),

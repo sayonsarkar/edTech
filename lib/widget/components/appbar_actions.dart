@@ -9,8 +9,8 @@ PreferredSizeWidget appBarWithActions() {
     elevation: 0,
     title: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
-        Text(
+      children: [
+        const Text(
           KString.hello,
           style: TextStyle(
               color: Colors.black, fontWeight: FontWeight.w300, fontSize: 14),

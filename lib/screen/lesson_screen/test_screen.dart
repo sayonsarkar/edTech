@@ -1,6 +1,5 @@
 import 'package:edtech/gen/assets.gen.dart';
 import 'package:edtech/screen/lesson_screen/question_screen.dart';
-import 'package:edtech/utilities/colors.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/utilities/text_style.dart';
 import 'package:edtech/widget/course/outlined_btn.dart';
@@ -33,10 +32,14 @@ class TestScreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
                     Text(
-                      KString.quiz,
-                      style: TextStyle(color: KColor.appOrange),
+                      index == 0
+                          ? KString.quiz1
+                          : index == 1
+                              ? KString.quiz2
+                              : KString.quiz3,
+                      style: TextStyles.orangeText,
                     ),
                     Text(
                       KString.tagsForHeader,
@@ -45,6 +48,7 @@ class TestScreen extends StatelessWidget {
                     Text(
                       KString.testDesc,
                       textAlign: TextAlign.justify,
+                      style: TextStyles.greyText,
                     ),
                   ],
                 ),

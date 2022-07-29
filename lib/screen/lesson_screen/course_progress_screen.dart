@@ -11,20 +11,22 @@ class CourseProgressScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBarWithLeadingIcon(text: KString.courseHeaderText),
-      body: Padding(
-        padding: const EdgeInsets.all(8),
-        child: Column(
-          children: [
-            progressVideo(context),
-            Expanded(
-              child: ListView.builder(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            children: [
+              progressVideo(context),
+              ListView.builder(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
                 itemCount: 2,
                 itemBuilder: (context, index) {
                   return progressContainer(index, context);
                 },
-              ),
-            )
-          ],
+              )
+            ],
+          ),
         ),
       ),
     );

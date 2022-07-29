@@ -2,7 +2,7 @@ import 'package:edtech/utilities/text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-PreferredSizeWidget appBarWithLeadingIcon({required String text}) {
+PreferredSizeWidget appBarWithLeadingIcon({required String text, bool? close}) {
   return AppBar(
     elevation: 0,
     backgroundColor: Colors.white,
@@ -12,7 +12,7 @@ PreferredSizeWidget appBarWithLeadingIcon({required String text}) {
     ),
     centerTitle: true,
     leading: GestureDetector(
-      onTap: () => Get.back(),
+      onTap: close == true || close == null ? () => Get.back() : () {},
       child: Container(
         margin: const EdgeInsets.all(8),
         padding: const EdgeInsets.only(left: 12),

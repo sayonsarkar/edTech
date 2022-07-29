@@ -32,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
           const SizedBox(
             height: 50,
           ),
-          const Text(
+          Text(
             KString.codeFactory,
             style: TextStyles.splashScreenText,
           )

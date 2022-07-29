@@ -2,6 +2,8 @@ class KString {
   static const logIn = 'Log in';
   static const password = 'Password';
   static const email = 'Email';
+  static const save = 'Save';
+  static const cancel = 'Cancel';
   static const name = 'Name';
   static const String settings = 'Settings';
   static const signUp = 'Sign up';
@@ -18,20 +20,26 @@ class KString {
   static const String intro1 = 'Learn anytime \n and anywhere';
   static const String intro2 = 'Find a course \n for you';
   static const String intro3 = 'Improve your skills';
+  static const changePassword = 'Change password';
+  static const changeEmail = 'Change Email';
+  static const changeName = 'Change Name';
   static const String introdesc1 =
-      "Quarantine is the perfect time to spend your day learning something new, from anywhere!";
+      "Quarantine is the perfect time to spend your\nday learning something new, from anywhere!";
 
   static const String introdesc2 =
-      "Quarantine is the perfect time to spend your  day learning something new, from anywhere!";
+      "Quarantine is the perfect time to spend your\nday learning something new, from anywhere!";
 
   static const String introdesc3 =
-      "Quarantine is the perfect time to spend your day learning something new, from anywhere!";
+      "Quarantine is the perfect time to spend your\nday learning something new, from anywhere!";
   static const String congratulationsSubHeader =
       'Congratulations for getting \nall the answers correct!';
 
   static const courseBodyText = 'Advanced mobile interface design';
 
-  static const String ui = 'UI';
+  static const price = "\$50";
+  static const count = " x2";
+
+  static const String ui = 'UI Advanced';
   static const String duration = '3 h 30 min';
   static const String searchCourse = 'Search course';
   static const String courseHeader = 'About the course';
@@ -55,7 +63,9 @@ class KString {
   static const String tagsForHeader = 'Tags for Headers';
   static const String testDesc =
       'Let’s put your memory on this topic test. Solve tasks and check your knowledge.';
-  static const String quiz = 'Quiz 1';
+  static const String quiz1 = 'Quiz 1';
+  static const String quiz2 = 'Quiz 2';
+  static const String quiz3 = 'Quiz 3';
   static const String emptyString = '';
   static const String continueText = 'Continue';
   static const String questiontext = 'Which tag for\nthe biggest header?';
@@ -87,4 +97,12 @@ class KString {
   static const String tests = 'Tests';
   static const String hello = 'Hello,';
   static const String noDataFound = 'No Data Found';
+  static const String greyCount = '3 of 11 lessons';
+  static const turnedOn = 'Notification turned on';
+  static const turnedOff = 'Notification turned off';
+  static const yourCart = 'Your Cart';
+  static const addYourVoucher = "Add voucher code";
+  static const checkOut = "Check Out";
+  static const totalText = "Total:\n";
+  static const totalPrice = "\$100";
 }

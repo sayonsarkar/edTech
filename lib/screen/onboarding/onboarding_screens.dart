@@ -45,14 +45,15 @@ class _OnboardingScreensState extends State<OnboardingScreens> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Assets.images.intro1.image(),
-                      const Text(
+                      Text(
                         KString.intro1,
                         textAlign: TextAlign.center,
                         style: TextStyles.introHeader,
                       ),
-                      const Text(
+                      Text(
                         KString.introdesc1,
                         textAlign: TextAlign.center,
+                        style: TextStyles.greyText,
                       )
                     ],
                   ),
@@ -60,14 +61,15 @@ class _OnboardingScreensState extends State<OnboardingScreens> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Assets.images.intro2.image(),
-                      const Text(
+                      Text(
                         KString.intro2,
                         textAlign: TextAlign.center,
                         style: TextStyles.introHeader,
                       ),
-                      const Text(
+                      Text(
                         KString.introdesc2,
                         textAlign: TextAlign.center,
+                        style: TextStyles.greyText,
                       )
                     ],
                   ),
@@ -75,13 +77,14 @@ class _OnboardingScreensState extends State<OnboardingScreens> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Assets.images.intro3.image(),
-                      const Text(
+                      Text(
                         KString.intro3,
                         style: TextStyles.introHeader,
                       ),
-                      const Text(
+                      Text(
                         KString.introdesc3,
                         textAlign: TextAlign.center,
+                        style: TextStyles.greyText,
                       )
                     ],
                   )

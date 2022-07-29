@@ -17,8 +17,8 @@ class _BottomBarState extends State<BottomBar> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
     CoursesScreen(),
-    ProfilePage(),
-    SettingsPage(),
+    ProfilePage(close: false),
+    SettingsPage(close: false),
   ];
 
   void _onItemTapped(int index) {
@@ -30,13 +30,20 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       body: _widgetOptions.elementAt(_selectedIndex),
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(
-            border: Border(top: BorderSide(color: Colors.black))),
+          color: Colors.transparent,
+          borderRadius: BorderRadius.only(
+              topRight: Radius.circular(20), topLeft: Radius.circular(20)),
+          boxShadow: [
+            BoxShadow(color: Colors.black38, spreadRadius: 0, blurRadius: 2),
+          ],
+        ),
         child: ClipRRect(
           borderRadius: const BorderRadius.only(
-              topLeft: Radius.circular(10), topRight: Radius.circular(20)),
+              topLeft: Radius.circular(20), topRight: Radius.circular(20)),
           child: BottomNavigationBar(
             items: [
               const BottomNavigationBarItem(

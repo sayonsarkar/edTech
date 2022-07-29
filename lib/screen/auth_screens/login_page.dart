@@ -8,15 +8,23 @@ import 'package:edtech/widget/login/login_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: SingleChildScrollView(
             child: SizedBox(
               height: MediaQuery.of(context).size.height * 0.95,
@@ -40,11 +48,14 @@ class LoginPage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  inputTextField(hintText: KString.email),
-                  inputTextField(
+                  inputTextField(emailController, hintText: KString.email),
+                  inputTextField(passwordController,
                       hintText: KString.password,
                       suffixIcon: const Icon(Icons.remove_red_eye_outlined)),
-                  const Text(KString.forgotPassword),
+                  Text(
+                    KString.forgotPassword,
+                    style: TextStyles.greyText,
+                  ),
                   loginButton(
                       context: context,
                       text: KString.logIn,
@@ -53,7 +64,7 @@ class LoginPage extends StatelessWidget {
                     onTap: () {
                       Get.to(() => const SignUpPage());
                     },
-                    child: const Text(KString.signUp),
+                    child: Text(KString.signUp, style: TextStyles.greyText),
                   )
                 ],
               ),

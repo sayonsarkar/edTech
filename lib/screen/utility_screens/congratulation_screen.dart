@@ -19,7 +19,7 @@ class CongratulationScreen extends StatelessWidget {
             const Spacer(),
             Assets.images.congratulationsImage.image(),
             const SizedBox(height: 20),
-            const Text(
+            Text(
               KString.congratulations,
               style: TextStyles.courseContainerHeader,
             ),

@@ -8,6 +8,15 @@
 // ignore_for_file: directives_ordering,unnecessary_import
 
 import 'package:flutter/widgets.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter/services.dart';
+
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// File path: assets/icons/receipt.svg
+  SvgGenImage get receipt => const SvgGenImage('assets/icons/receipt.svg');
+}
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
@@ -15,9 +24,17 @@ class $AssetsImagesGen {
   /// File path: assets/images/Price.png
   AssetGenImage get price => const AssetGenImage('assets/images/Price.png');
 
+  /// File path: assets/images/alt_course_image.png
+  AssetGenImage get altCourseImage =>
+      const AssetGenImage('assets/images/alt_course_image.png');
+
   /// File path: assets/images/congratulations_image.png
   AssetGenImage get congratulationsImage =>
       const AssetGenImage('assets/images/congratulations_image.png');
+
+  /// File path: assets/images/course_alt_image.png
+  AssetGenImage get courseAltImage =>
+      const AssetGenImage('assets/images/course_alt_image.png');
 
   /// File path: assets/images/course_detail_image.png
   AssetGenImage get courseDetailImage =>
@@ -30,6 +47,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/course_progress.png
   AssetGenImage get courseProgress =>
       const AssetGenImage('assets/images/course_progress.png');
+
+  /// File path: assets/images/css.png
+  AssetGenImage get css => const AssetGenImage('assets/images/css.png');
 
   /// File path: assets/images/email.png
   AssetGenImage get email => const AssetGenImage('assets/images/email.png');
@@ -73,6 +93,10 @@ class $AssetsImagesGen {
   AssetGenImage get notification =>
       const AssetGenImage('assets/images/notification.png');
 
+  /// File path: assets/images/notification_icon.png
+  AssetGenImage get notificationIcon =>
+      const AssetGenImage('assets/images/notification_icon.png');
+
   /// File path: assets/images/password.png
   AssetGenImage get password =>
       const AssetGenImage('assets/images/password.png');
@@ -97,6 +121,10 @@ class $AssetsImagesGen {
   AssetGenImage get questionImage =>
       const AssetGenImage('assets/images/question_image.png');
 
+  /// File path: assets/images/search_icon.png
+  AssetGenImage get searchIcon =>
+      const AssetGenImage('assets/images/search_icon.png');
+
   /// File path: assets/images/settings_icon.png
   AssetGenImage get settingsIcon =>
       const AssetGenImage('assets/images/settings_icon.png');
@@ -113,14 +141,24 @@ class $AssetsImagesGen {
   AssetGenImage get splashScreenImage =>
       const AssetGenImage('assets/images/splash_screen_image.png');
 
+  /// File path: assets/images/swift.png
+  AssetGenImage get swift => const AssetGenImage('assets/images/swift.png');
+
   /// File path: assets/images/test_card_image.png
   AssetGenImage get testCardImage =>
       const AssetGenImage('assets/images/test_card_image.png');
+
+  /// File path: assets/images/ui.png
+  AssetGenImage get ui => const AssetGenImage('assets/images/ui.png');
+
+  /// File path: assets/images/ux.png
+  AssetGenImage get ux => const AssetGenImage('assets/images/ux.png');
 }
 
 class Assets {
   Assets._();
 
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
@@ -185,4 +223,53 @@ class AssetGenImage {
   String get path => _assetName;
 
   String get keyName => _assetName;
+}
+
+class SvgGenImage {
+  const SvgGenImage(this._assetName);
+
+  final String _assetName;
+
+  SvgPicture svg({
+    Key? key,
+    bool matchTextDirection = false,
+    AssetBundle? bundle,
+    String? package,
+    double? width,
+    double? height,
+    BoxFit fit = BoxFit.contain,
+    AlignmentGeometry alignment = Alignment.center,
+    bool allowDrawingOutsideViewBox = false,
+    WidgetBuilder? placeholderBuilder,
+    Color? color,
+    BlendMode colorBlendMode = BlendMode.srcIn,
+    String? semanticsLabel,
+    bool excludeFromSemantics = false,
+    Clip clipBehavior = Clip.hardEdge,
+    bool cacheColorFilter = false,
+    SvgTheme? theme,
+  }) {
+    return SvgPicture.asset(
+      _assetName,
+      key: key,
+      matchTextDirection: matchTextDirection,
+      bundle: bundle,
+      package: package,
+      width: width,
+      height: height,
+      fit: fit,
+      alignment: alignment,
+      allowDrawingOutsideViewBox: allowDrawingOutsideViewBox,
+      placeholderBuilder: placeholderBuilder,
+      color: color,
+      colorBlendMode: colorBlendMode,
+      semanticsLabel: semanticsLabel,
+      excludeFromSemantics: excludeFromSemantics,
+      clipBehavior: clipBehavior,
+      cacheColorFilter: cacheColorFilter,
+      theme: theme,
+    );
+  }
+
+  String get path => _assetName;
 }

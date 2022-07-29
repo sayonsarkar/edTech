@@ -9,7 +9,7 @@ tabBar(BuildContext context, TabController? tabController, int? activeTabIndex,
       padding: const EdgeInsets.all(8.0),
       child: SizedBox(
         width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height * 0.05,
+        height: MediaQuery.of(context).size.height * 0.06,
         child: TabBar(
           controller: tabController,
           onTap: onTap,

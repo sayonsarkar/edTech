@@ -13,11 +13,12 @@ class YourCoursesScreen extends StatelessWidget {
     return Scaffold(
       appBar: appBarWithLeadingIcon(text: KString.yourCourses),
       body: ListView.builder(
-        padding: const EdgeInsets.all(8),
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         itemCount: 3,
         itemBuilder: (context, index) {
           return courseContainer(
             context,
+            index,
             onTap: () => Get.to(
               () => const CourseProgressScreen(),
             ),

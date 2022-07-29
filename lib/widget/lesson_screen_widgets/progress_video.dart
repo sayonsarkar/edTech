@@ -27,12 +27,12 @@ Widget progressVideo(BuildContext context) {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: const [
+              children: [
                 Text(
                   KString.courseHeaderText,
                   style: TextStyles.courseContainerHeader,
                 ),
-                Text(KString.courseBodyText)
+                const Text(KString.courseBodyText)
               ],
             ),
           ),

@@ -13,7 +13,8 @@ Widget progressContainer(int index, BuildContext context) {
         border: Border.all(color: Colors.grey)),
     child: Row(
       children: [
-        SizedBox(
+        Container(
+          padding: const EdgeInsets.only(left: 8),
           width: 70,
           height: 60,
           child: index == 0
@@ -31,7 +32,7 @@ Widget progressContainer(int index, BuildContext context) {
               index == 0 ? KString.progressHeader1 : KString.progressHeader2,
               style: TextStyles.progressheader,
             ),
-            progressColumn(context)
+            progressColumn(context, index)
           ],
         )
       ],

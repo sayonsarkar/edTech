@@ -20,7 +20,7 @@ class NoPaymentScreen extends StatelessWidget {
             const Spacer(),
             Assets.images.loginImage.image(),
             const SizedBox(height: 20),
-            const Text(
+            Text(
               KString.noPaymentHeader,
               style: TextStyles.courseContainerHeader,
             ),

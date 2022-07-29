@@ -14,7 +14,7 @@ Widget loginButton({
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: KColor.appOrange,
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(15),
       ),
       child: Center(
           child: Text(

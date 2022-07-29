@@ -16,7 +16,7 @@ class LessonScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Assets.images.lessonVideo.image(scale: 1),
-          const Text(
+          Text(
             KString.introduction,
             style: TextStyles.progressheader,
           ),

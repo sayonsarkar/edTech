@@ -1,6 +1,6 @@
 # edtech
 
-<img src="screenshots/app_screenshot.jpg"> 
+<img src="screenshots/image1.jpeg"> 
 
 This is an online education application for both Android and IOS. This application helps users in upgrading their skills through video lessons. It also helps users in keeping track of their progress through quiz on each topic they have completed.
 
@@ -55,7 +55,7 @@ Let's take a deep dive to how the files and folders are arranged in the app.
 │   │   └── assets                      <------ Assets used in the app
 |   |          └── images               <------ Images Used in the Applications
 │   │   └── screens                     <------ screens used in the App
-│   │   └── utility               
+│   │   └── utility                     <------ files containing all constants and strings u
 │   │   └── widgets                     <------ Assets used in the app
 |   |          └── screen-sub-folders   <------ Contains widgets of the every screen used in the app       
 │   │   └── main.dart                   <------ Starting point of the app

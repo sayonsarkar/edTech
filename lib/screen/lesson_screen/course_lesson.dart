@@ -34,32 +34,41 @@ class _CourseLessonState extends State<CourseLesson>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBarWithLeadingIcon(text: KString.courseHeaderText),
-      body: Column(
-        children: [
-          const Text(
-            KString.tagsForHeader,
-            style: TextStyles.courseContainerHeader,
-          ),
-          tabBar(context, tabController, activeTabIndex, onTap: (index) {
-            setState(() {
-              activeTabIndex = index;
-            });
-          }),
-          Expanded(
-            child: TabBarView(
-              controller: tabController,
-              children: const [
-                LessonScreen(),
-                TestScreen(),
-                Center(
-                    child: Text(
-                  KString.noDataFound,
-                  style: TextStyles.courseContainerHeader,
-                )),
-              ],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 12.0),
+        child: Column(
+          children: [
+            Text(
+              KString.tagsForHeader,
+              style: TextStyles.courseContainerHeader,
             ),
-          )
-        ],
+            const SizedBox(height: 10),
+            Text(
+              KString.greyCount,
+              style: TextStyles.greyText,
+            ),
+            const SizedBox(height: 10),
+            tabBar(context, tabController, activeTabIndex, onTap: (index) {
+              setState(() {
+                activeTabIndex = index;
+              });
+            }),
+            Expanded(
+              child: TabBarView(
+                controller: tabController,
+                children: [
+                  const LessonScreen(),
+                  const TestScreen(),
+                  Center(
+                      child: Text(
+                    KString.noDataFound,
+                    style: TextStyles.courseContainerHeader,
+                  )),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

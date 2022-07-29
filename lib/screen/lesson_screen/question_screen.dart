@@ -28,8 +28,11 @@ class _QuestionScreenState extends State<QuestionScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              const Text(KString.questionCount),
-              const Text(
+              Text(
+                KString.questionCount,
+                style: TextStyles.greyText,
+              ),
+              Text(
                 KString.questiontext,
                 style: TextStyles.courseContainerHeader,
                 textAlign: TextAlign.center,
