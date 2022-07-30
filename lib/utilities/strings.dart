@@ -105,4 +105,6 @@ class KString {
   static const checkOut = "Check Out";
   static const totalText = "Total:\n";
   static const totalPrice = "\$100";
+  static const eCommerce = 'E-Commerce';
+  static const thanksMsg = 'Thanks for download E-Commerce app.';
 }

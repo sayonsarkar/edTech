@@ -1,7 +1,9 @@
 import 'package:edtech/gen/assets.gen.dart';
+import 'package:edtech/screen/notification/notification_page.dart';
 import 'package:edtech/utilities/strings.dart';
 import 'package:edtech/utilities/text_style.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 PreferredSize courseAppBar() {
@@ -33,7 +35,10 @@ PreferredSize courseAppBar() {
         ],
       ),
       actions: [
-        Assets.images.notificationIcon.image(scale: 2),
+        GestureDetector(
+          onTap: () => Get.to(() => const NotificationPage()),
+          child: Assets.images.notificationIcon.image(scale: 2),
+        ),
       ],
     ),
   );

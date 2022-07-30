@@ -56,4 +56,8 @@ class TextStyles {
 
   static TextStyle settingsSubHeaderText = GoogleFonts.rubik(
       color: KColor.appGreyColor, fontWeight: FontWeight.w400);
+
+  static TextStyle detilsTextStyle = GoogleFonts.rubik(
+    height: 1.5,
+  );
 }
