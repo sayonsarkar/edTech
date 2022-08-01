@@ -1,3 +1,4 @@
+import 'package:edtech/screen/lesson_screen/discuss_screen.dart';
 import 'package:edtech/screen/lesson_screen/lesson_screen.dart';
 import 'package:edtech/screen/lesson_screen/test_screen.dart';
 import 'package:edtech/utilities/strings.dart';
@@ -56,14 +57,10 @@ class _CourseLessonState extends State<CourseLesson>
             Expanded(
               child: TabBarView(
                 controller: tabController,
-                children: [
-                  const LessonScreen(),
-                  const TestScreen(),
-                  Center(
-                      child: Text(
-                    KString.noDataFound,
-                    style: TextStyles.courseContainerHeader,
-                  )),
+                children: const [
+                  LessonScreen(),
+                  TestScreen(),
+                  DiscussScreen(),
                 ],
               ),
             )

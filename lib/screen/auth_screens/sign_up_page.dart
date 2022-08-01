@@ -28,7 +28,7 @@ class _SignUpPageState extends State<SignUpPage> {
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: SingleChildScrollView(
           child: SizedBox(
-            height: MediaQuery.of(context).size.height * 0.95,
+            height: MediaQuery.of(context).size.height * 0.93,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -38,7 +38,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   style: TextStyles.loginHeaderText,
                 ),
                 Text(
-                  KString.socialLoginText,
+                  KString.createAccount,
                   style: TextStyles.greyText,
                 ),
                 inputTextField(nameController, hintText: KString.name),

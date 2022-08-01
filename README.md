@@ -12,6 +12,8 @@ This is an online education application for both Android and IOS. This applicati
 -   smooth_page_indicator: [link](https://pub.dev/packages/smooth_page_indicator)
 -   get: [link](https://pub.dev/packages/get)
 -   flutter_gen: [link](https://pub.dev/packages/flutter_gen)
+-   google_fonts: [link](https://pub.dev/packages/google_fonts)
+-   fluttertoast: [link](https://pub.dev/packages/fluttertoast)
 
 ## Screens it contains:
 
@@ -39,7 +41,18 @@ This is an online education application for both Android and IOS. This applicati
 
 => Bottom Navigation Bar
 
-## Screenshots
+## App Feature:
+
+* Created Using Latest Flutter framework.
+* Supports Android / iOS
+* 10+ Screen
+* Easy to integrate into your project.
+* Single codebase for iOS and Android
+* Responsive design for mobile phones
+* Easy to customize
+* Flawless navigation and user interactions
+
+## Product samples
 <img src="screenshots/1.png" height="400" width="200"> 
 <img src="screenshots/2.png" height="400" width="200"> 
 

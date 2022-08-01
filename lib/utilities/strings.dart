@@ -13,6 +13,7 @@ class KString {
   static const String userEmail = 'juanita123@gmail.com';
   static const String lastChanged = 'changed 2 weeks ago';
   static const forgotPassword = 'Forgot Password?';
+  static const String createAccount = 'Create your account';
   static const socialLoginText = 'Login with social networks';
   static const String codeFactory = 'CodeFactory';
   static const String next = 'Next';
@@ -37,7 +38,7 @@ class KString {
   static const courseBodyText = 'Advanced mobile interface design';
 
   static const price = "\$50";
-  static const count = " x2";
+  static const count = " x1";
 
   static const String ui = 'UI Advanced';
   static const String duration = '3 h 30 min';
@@ -107,4 +108,9 @@ class KString {
   static const totalPrice = "\$100";
   static const eCommerce = 'E-Commerce';
   static const thanksMsg = 'Thanks for download E-Commerce app.';
+  static const dummyDate = '11/Feb/2021 04:42 PM';
+  static const dummyText1 =
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.';
+  static const dummyText2 =
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.";
 }
