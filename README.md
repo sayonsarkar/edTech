@@ -53,8 +53,11 @@ This is an online education application for both Android and IOS. This applicati
 * Flawless navigation and user interactions
 
 ## Product samples
+<p float="left">
 <img src="screenshots/1.png" height="400" width="200"> 
 <img src="screenshots/2.png" height="400" width="200"> 
+<img src="screenshots/3.png" height="400" width="200"> 
+</p>
 
 ## Folder Structure
 
