@@ -54,8 +54,8 @@ This is an online education application for both Android and IOS. This applicati
 
 ## Product samples
 
-:-------------------------:|:-------------------------:|:-------------------------:
-![Simulator Screen Shot - iPhone 13 - 2022-07-28 at 13 07 11](https://raw.githubusercontent.com/shayon172000/edTech/main/screenshots/1_new.png)   |  ![Simulator Screen Shot - iPhone 13 - 2022-07-28 at 13 07 42](https://raw.githubusercontent.com/shayon172000/edTech/main/screenshots/2_new.png)| ![Simulator Screen Shot - iPhone 13 - 2022-07-28 at 13 07 51](https://raw.githubusercontent.com/shayon172000/edTech/main/screenshots/3_new.png)
+
+![Model](https://raw.githubusercontent.com/shayon172000/edTech/main/screenshots/1_new.png)   |  ![Model](https://raw.githubusercontent.com/shayon172000/edTech/main/screenshots/2_new.png)| ![Model](https://raw.githubusercontent.com/shayon172000/edTech/main/screenshots/3_new.png)
 
 
 ## Folder Structure
