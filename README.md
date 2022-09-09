@@ -1,6 +1,6 @@
 # edtech
 
-<img src="screenshots/image1.jpeg"> 
+![ezcv logo](https://raw.githubusercontent.com/shayon172000/edTech/main/screenshots/image1.jpeg)
 
 This is an online education application for both Android and IOS. This application helps users in upgrading their skills through video lessons. It also helps users in keeping track of their progress through quiz on each topic they have completed.
 
